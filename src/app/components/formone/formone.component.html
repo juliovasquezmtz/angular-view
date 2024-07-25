@@ -1,0 +1,18 @@
+<div class="container">
+	<form class="container__form" [formGroup]="formGroup">
+		<h1>Registro de Libros</h1>
+		<label>Titulo</label>
+		<input class="field" formControlName="title" />
+		<span class="error" *ngIf="formGroup.controls.title.hasError('required')">Ingrese el titulo</span>
+
+		<label>Calificación</label>
+		<app-star-rating formControlName="rating"></app-star-rating>
+		<span class="error" *ngIf="formGroup.controls.rating.hasError('min')">La calificación mínima es 3</span>
+
+        <label>Autor</label>
+        <app-rating-name formControlName="ratingName"></app-rating-name>
+        <!-- <span class="error" *ngIf="formGroup.controls.ratingName.hasError('required')">Ingrese el titulo</span> -->
+		
+		<button type="button" (click)="clickSave()">Save</button>
+	</form>
+</div>

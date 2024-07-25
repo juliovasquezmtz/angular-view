@@ -1,0 +1,31 @@
+.users h4{
+    margin-top: 0;
+}
+.lis-users {
+    display: grid;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 10px;
+    li {
+        display: grid;
+        grid-auto-flow: column;
+        grid: 1fr / 40px 120px 40px 1fr;
+        list-style: none;
+        padding: 0 8px;
+        margin: 0;
+        p {
+            margin: 0;
+        }
+    }
+    .head {
+        background-color: #BC955C;
+        color: #fff;
+    }
+    .user-row {
+        &:hover {
+            background-color: #CBA97B88;
+            color: #4d4d4d;
+        }
+    }
+}

@@ -1,0 +1,42 @@
+.add-user-form {
+    display: grid;
+    gap: 10px;
+    .field {
+        display: grid;
+        grid: 5px 5px 15px / 1fr;
+        align-items: center;
+        label {
+            grid-area: 2/1/ span 2/ span 1;
+            z-index: 1;
+            width: fit-content;
+            padding: 0 6px;
+            transition: 0.25s;
+            font-size: 12px;
+
+
+            grid-area: 1/1/ span 2/ span 1;
+            font-size: 10px;
+            background-color: #fff;
+            color: #3C9987;
+            margin-left: 8px;
+            font-weight: bold;
+        }
+        input {
+            grid-area: 2/1/ span 2/ span 1;
+        }
+        &:focus-within {
+            label {
+                grid-area: 1/1/ span 2/ span 1;
+                font-size: 10px;
+                background-color: #fff;
+                color: #3C9987;
+                margin-left: 8px;
+                font-weight: bold;
+            }
+            input {
+                border-color: #3C9987;
+                outline: none;
+            }   
+        }
+    }
+}

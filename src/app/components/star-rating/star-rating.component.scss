@@ -1,0 +1,23 @@
+button {
+	background: none;
+	color: inherit;
+	border: none;
+	// padding: 0;
+	cursor: pointer;
+	// outline: inherit;
+
+	span {
+        font-size: 1.5rem;
+        &.select {
+            color: #ffd740;
+        }
+        &.unselect {
+            color: #888;
+        }
+	}
+
+}
+
+.material-symbols-rounded {
+	font-size: 28px;
+}

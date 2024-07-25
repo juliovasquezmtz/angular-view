@@ -1,0 +1,11 @@
+<section class="ngFor users">
+    <ul class="lis-users">
+        <li class="head">
+            <p>Nombres</p>
+        </li>
+        <li class="user-row" *ngFor="let name of names, index as i">
+            <p>{{name}}</p>
+        </li>
+    </ul>
+
+</section>

@@ -1,0 +1,28 @@
+.lis-users {
+    display: grid;
+    grid-template-columns: 100px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 10px;
+    li {
+        display: grid;
+        list-style: none;
+        padding: 4px 12px;
+        margin: 0;
+        p {
+            margin: 0;
+        }
+    }
+    .head {
+        background-color: #BC955C;
+        color: #fff;
+    }
+    .user-row {
+        border-bottom: 1px solid #BC955C;
+        &:hover {
+            background-color: #3C998788;
+            color: #000;
+        }
+    }
+}

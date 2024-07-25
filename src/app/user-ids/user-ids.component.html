@@ -1,0 +1,11 @@
+<section class="ngFor users">
+    <ul class="lis-users">
+        <li class="head">
+            <p>ID</p>
+        </li>
+        <li class="user-row" *ngFor="let id of ids" [routerLink]="['/users-by-id', id]">
+            <p>{{id}}</p>
+        </li>
+    </ul>
+
+</section>

@@ -1,0 +1,35 @@
+<section class="ngFor users">
+    <h4>Lista de usuarios</h4>
+    <ul class="lis-users">
+        <li class="head">
+            <p>ID</p>
+            <p>Nombre</p>
+            <p>Edad</p>
+            <p>Email</p>
+        </li>
+        <li class="user-row" *ngFor="let user of users, index as i" [routerLink]="['/users-by-id', user.id]">
+            <p>{{user.id}}</p>
+            <p>{{user.name}}</p>
+            <p>{{user.age}}</p>
+            <p>{{user.email}}</p>
+        </li>
+    </ul>
+
+    <!-- 
+    <h4>Lista de personal</h4>
+        <ul class="lis-users">
+            <li class="head">
+                <p>ID</p>
+                <p>Nombre</p>
+                <p>Edad</p>
+                <p>Email</p>
+            </li>
+            <li class="user-row" *ngFor="let user of personal, index as i" [routerLink]="['/user-detail', user.id]">
+                <p>{{user.id}}</p>
+                <p>{{user.name}}</p>
+                <p>{{user.age}}</p>
+                <p>{{user.email}}</p>
+            </li>
+        </ul>
+        -->
+    </section>

@@ -1,0 +1,24 @@
+<div>
+    <section class="ngFor users">
+        <div *ngIf="enableSearh">
+            <input type="text" [(ngModel)]="searchId">
+            <button (click)="search()">Buscar</button>
+        </div>
+        <h4>Información de usuario</h4>
+        <ul class="list-users">
+            <li class="head">
+                <p>ID</p>
+                <p>Nombre</p>
+                <p>Edad</p>
+                <p>Email</p>
+            </li>
+            <li class="user-row">
+                <p>{{user.id}}</p>
+                <p>{{user.name}}</p>
+                <p>{{user.age}}</p>
+                <p>{{user.email}}</p>
+            </li>
+        </ul>
+    
+    </section>
+</div>

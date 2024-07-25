@@ -1,0 +1,23 @@
+<h4>Agregar usuario nuevo</h4>
+
+<section class="add-user-form">
+    <div class="field id">
+        <label for="">ID</label>
+        <input id="" type="number" [(ngModel)]="newUser.id">
+    </div>
+    <div class="field nombre">
+        <label for="">NOMBRE</label>
+        <input id="" type="text" [(ngModel)]="newUser.name">
+    </div>
+    <div class="field edad">
+        <label for="">EDAD</label>
+        <input id="" type="number" [(ngModel)]="newUser.age">
+    </div>
+    <div class="field email">
+        <label for="">EMAIL</label>
+        <input id="" type="email" [(ngModel)]="newUser.email">
+    </div>
+    <div class="actions">
+        <button (click)="setUser()">Guardar</button>
+    </div>
+</section>
